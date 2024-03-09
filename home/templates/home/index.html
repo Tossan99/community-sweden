@@ -1,10 +1,15 @@
 {% extends "base.html" %}
-{% block content %}
 
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
 <!-- index.html content starts here -->
 
     <h1>Placeholder Test</h1>
 
 <!-- index.html content ends here -->
-
 {% endblock %}

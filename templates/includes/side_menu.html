@@ -1,0 +1,47 @@
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" 
+    tabindex="-1" id="offcanvasMenue" aria-labelledby="offcanvasMenueLabel">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="offcanvasMenueLabel">Side Menu</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul>
+            <li>
+                <a href="{% url 'pp1' %}" class="{% if request.path == pp1_url %}active-side" aria-current="page{% endif %}">pp1</a>
+            </li>
+            <li>
+                <a href="{% url 'pp2' %}" class="{% if request.path == pp2_url %}active-side" aria-current="page{% endif %}">pp2</a>
+            </li>
+            <li>
+                <a href="{% url 'pp3' %}" class="{% if request.path == pp3_url %}active-side" aria-current="page{% endif %}">pp3</a>
+            </li>
+            <li>
+                <a href="{% url 'pp4' %}" class="{% if request.path == pp4_url %}active-side" aria-current="page{% endif %}">pp4</a>
+            </li>
+            <li>
+                <a href="#">pp5 Ecommerce</a>
+            </li>
+            <li>
+                <a href="#">pp5 Frontend</a>
+            </li>
+            <li>
+                <a href="#">pp5 Backend</a>
+            </li>
+            <li>
+                <a href="#">More apps</a>
+            </li>
+            <li>
+                <a href="#">More apps</a>
+            </li>
+            <li>
+                <a href="#">More apps</a>
+            </li>
+            <li>
+                <a href="#">More apps</a>
+            </li>
+            <li>
+                <a href="#">More apps</a>
+            </li>
+        </ul>
+    </div>
+</div>

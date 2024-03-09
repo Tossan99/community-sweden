@@ -1,10 +1,15 @@
 {% extends "base.html" %}
-{% block content %}
 
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/pp4.css' %}">
+{% endblock %}
+
+{% block content %}
 <!-- pp4.html content starts here -->
 
     <h1>Placeholder Test</h1>
 
 <!-- pp4.html content ends here -->
-
 {% endblock %}
