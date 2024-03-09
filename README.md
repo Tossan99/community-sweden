@@ -1,11 +1,18 @@
 # community-sweden
 
+![Community Sweden](documentation_media/community_sweden.jpg)
+
+We're thrilled to introduce you to our community-driven website, designed to support and enhance your journey through the Code Institute course. As a community passionate about learning and collaboration, we've created this platform to empower everyone to participate in coding and gain a deeper understanding of Django.
+
+## Table of Content
+
 ## Conventions to Follow
 
-### "" and ''
+### Double or Single Quotation Marks
+- We use `double quotation` marks for the outer quotes and `single quotation` marks for quotes within quotes. Ex: let string = "This is a 'string' with a quote"
 
 ### Spacing
-- We are using `4 spaces` for `indentation`.
+- We use `4 spaces` for `indentation`.
 
 ### Urls
 - The best `URLs` are clearly named and should almost be possible to be guessed by users. So, choose a structure that makes sense for this project. The About Us page may live at the `about/` `URL`, whereas logging into your site may live at `accounts/login/`.
