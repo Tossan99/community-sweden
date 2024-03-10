@@ -46,13 +46,15 @@ In order to merge your changes onto the main repository and keep everything in s
 Also, it's important to know the right order of staging, committing, pulling and pushing. Pushing before pulling can cause problems on github. Conversely, pulling before you will overwrite your local code with the code from the github repo.
 Again, don't worry, you will quickly get the hang of this, and there will be more details below.
 
+__Useful Git commands__
+
 <details>
 <summary>Merge/pull instructions</summary>
 
-```git add .``` to stage all your changes
-```git commit -m "your message here"``` to commit your changes with a message
-```git pull origin main``` to pull the code from the main repo. If it asks you about rebasing the code, you can use ```git config pull.rebase true```
-```git push``` to push your code onto your local branch
+- ```git add .``` to stage all your changes
+- ```git commit -m "your message here"``` to commit your changes with a message
+- ```git pull origin main``` to pull the code from the main repo. If it asks you about rebasing the code, you can use ```git config pull.rebase true```
+- ```git push``` to push your code onto your local branch
 
 </details>
 
