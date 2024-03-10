@@ -3,7 +3,7 @@
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
 {% url 'blog' as blog_url %}
-{% url 'peer_code_review' as peer_code_review_url %}
+{% url 'peer_review' as peer_review_url %}
 {% url 'pp1' as pp1_url %}
 {% url 'pp2' as pp2_url %}
 {% url 'pp3' as pp3_url %}
@@ -83,26 +83,18 @@
                                 <a class="nav-link {% if request.path == blog_url %}active" 
                                     aria-current="page{% endif %}" href="{% url 'blog' %}">Blog</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link {% if request.path == peer_review_url %}active" 
+                                    aria-current="page{% endif %}" href="{% url 'peer_review' %}">Peer Reviews</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <!-- Django Messages -->
-        <div class="container-fluid mt-2">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-8 col-sm-10">
-                    {% for message in messages %}
-                        <div class="alert {{ message.tags }} alert-dismissible fade show m-0" id="msg" role="alert">
-                            <h5 class="m-0">{{ message | safe }}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-
+        {% include 'includes/django_messages.html' %}
+        
         <main>
             {% block content %}
             <!-- Content Goes here -->

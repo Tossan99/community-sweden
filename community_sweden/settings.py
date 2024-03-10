@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     "about",
     "blog",
     "home",
+    "peer_review",
     "pp1",
     "pp2",
     "pp3",
