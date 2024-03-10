@@ -26,7 +26,7 @@ We will use branches rather than forks, unless there is a need to deploy an addi
 It's important that you only push changes to your own branch so that nobody overwrites the main repository. From there, you can migrate your changes to the main branch by making a pull request to merge your branch onto main. 
 
 <details>
-<summary>Branching instructions<summary>
+<summary>Branching instructions</summary>
 
 1. Click "new branch"
 2. Copy the URL or SSL key 
@@ -37,8 +37,6 @@ It's important that you only push changes to your own branch so that nobody over
 7. In your terminal, type in ```pip3 install -r requirements.txt``` to install all dependencies
 
 Now you're good to go.
-
-
 </details>
 
 ### Merging and Pull requests
@@ -49,7 +47,7 @@ Also, it's important to know the right order of staging, committing, pulling and
 Again, don't worry, you will quickly get the hang of this, and there will be more details below.
 
 <details>
-<summary>Merge/pull instructions<summary>
+<summary>Merge/pull instructions</summary>
 
 ```git add .``` to stage all your changes
 ```git commit -m "your message here"``` to commit your changes with a message
