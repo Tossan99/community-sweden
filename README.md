@@ -18,6 +18,14 @@ We're thrilled to introduce you to our community-driven website, designed to sup
 - The best `URLs` are clearly named and should almost be possible to be guessed by users. So, choose a structure that makes sense for this project. The About Us page may live at the `about/` `URL`, whereas logging into your site may live at `accounts/login/`.
 - Although it may be tempting, it is best not to give your `URLs` the same name as your `view function` or vice versa. So, our `blog/` `URL` would not call a `view function` named blog.
 
+### Branch / Fork
+
+Before you start working on this project, create your own branch by clicking "branches" and then then green "new branch" button. Then you can open the branch in your IDE.
+
+### Pull requests
+
+Always pull before you push.
+
 ## env.py
 - DM one of our members on slack to get access to the `env.py` file and its keys.
 
