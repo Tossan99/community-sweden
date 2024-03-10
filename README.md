@@ -65,5 +65,3 @@ __Useful Git commands__
 ## Setting Up a New App
 - Follow this short guide to set up your own `app` in our community project:
 
-
-Testing testing
