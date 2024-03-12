@@ -38,60 +38,62 @@
     </head>
 
     <body>
-        
-        <!-- Header -->
+        <!-- Navbar -->
         <header>
-            <div class="row mt-3">
-                <div class="col-1 text-center p-0">
-                    <button class="btn" type="button" data-bs-toggle="offcanvas" 
-                        data-bs-target="#offcanvasMenue" aria-controls="offcanvasScrolling">
-                        <span><i class="fa-solid fa-arrow-right fa-2xl"></i></span>
-                    </button>
-                </div>
-                {% include 'includes/side_menu.html' %}
-                <div class="col-10 p-0">
-                    <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <h1 class="h2">Community Sweden</h1>
-                    </a>
-                </div>
-                <div class="col-1 text-center p-0">
-                    <a class="" href="#">
-                        <i class="fas fa-user fa-lg fa-2xl"></i>
-                    </a>
-                </div>
-            </div>
-        
-
-            <!-- Navbar -->
             <nav class="navbar navbar-expand-sm bg-body-tertiary w-auto mx-auto">
                 <div class="container-fluid">
+                    <a href="{% url 'home' %}" class="navbar-brand">
+                        Community Sweden
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto mb-0">
                             <li class="nav-item">
                                 <a class="nav-link {% if request.path == home_url %}active" 
-                                    aria-current="page{% endif %}" href="{% url 'home' %}">Home</a>
+                                    aria-current="page{% endif %}" href="{% url 'home' %}">Home
+                                </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {% if request.path == about_url %}active" 
-                                    aria-current="page{% endif %}" href="{% url 'about' %}">About Us</a>
+                                    aria-current="page{% endif %}" href="{% url 'about' %}">About Us
+                                </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {% if request.path == blog_url %}active" 
-                                    aria-current="page{% endif %}" href="{% url 'blog' %}">Blog</a>
+                                    aria-current="page{% endif %}" href="{% url 'blog' %}">Blog
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link {% if request.path == peer_review_url %}active" 
-                                    aria-current="page{% endif %}" href="{% url 'peer_review' %}">Peer Reviews</a>
+                                <a class="nav-link" data-bs-toggle="offcanvas" 
+                                    data-bs-target="#offcanvasMenue" aria-controls="offcanvasScrolling" 
+                                    role="button">More Apps
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mb-0 me-xxl-5 me-xl-4 me-lg-3 me-md-2 me-0">
+                            <li class="nav-item dropstart">
+                                <a class="nav-link{% if request.path == blog_url %}active" 
+                                    aria-current="page{% endif %}" role="button" data-bs-toggle="dropdown" 
+                                    aria-expanded="false">
+                                    <i class="fas fa-user fa-lg fa-2xl"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{% url 'profiles' %}">Sign Up</a></li>
+                                    <li><a class="dropdown-item" href="#">Log In</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
+
+        {% include 'includes/side_menu.html' %}
 
         {% include 'includes/django_messages.html' %}
         
