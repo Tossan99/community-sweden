@@ -10,20 +10,22 @@ We're thrilled to introduce you to our community-driven website, designed to sup
 
 ### Branching
 
-<details>
-<summary>Branching instructions</summary>
-Before you start working on this project, you must create your own branch by clicking "branches" and then the green "new branch" button. Give your branch a name associated with yourself
-<br><br>
+Before you start working on this project, you must create your own branch by clicking "branches" and then the green "new branch" button. Give your branch a name associated with yourself.
+
 <img src="documentation_media/branch.JPG">
 <img src="documentation_media/new_branch.JPG">
 <img src="documentation_media/branch_name.JPG">
-<br><br>
-We are all using different IDEs so open upp the repository however you want in your IDE. Make sure you are working against your branch by typing git status in the terminal.
+
+We are all using different IDEs, so open up the repository however you want in your IDE. Make sure you are working against your branch by typing git status in the terminal.
+
 <img src="documentation_media/main.JPG">
-If it says that you're on main switch to your own branch by typing git checkout "your branch name".
+
+If it says that you're on main, switch to your branch by typing `git checkout <your branch name>`.
+
 <img src="documentation_media/user_branch.JPG">
-Before you start working type in the command pip3 install -r requirements.txt to install dependencies
-</details>
+
+Before you start working, type in the command `pip3 install -r requirements.txt` to install dependencies.
+
 
 ### Merging and Pull requests
 
@@ -32,17 +34,15 @@ In order to merge your changes onto the main repository and keep everything in s
 Also, it's important to know the right order of staging, committing, pulling and pushing. Pushing before pulling can cause problems on github. Conversely, pulling before you will overwrite your local code with the code from the github repo.
 Again, don't worry, you will quickly get the hang of this, and there will be more details below.
 
-__Useful Git commands__
-
-<details>
-<summary>Merge/pull instructions</summary>
+**Merge/pull instructions**
 
 - ```git add .``` to stage all your changes
 - ```git commit -m "your message here"``` to commit your changes with a message
 - ```git pull origin main``` to pull the code from the main repo. If it asks you about rebasing the code, you can use ```git config pull.rebase true```
 - ```git push``` to push your code onto your local branch
 
-</details>
+After following these steps, you can do a pull request from the [Community Sweden Github page](https://github.com/Tossan99/community-sweden).
+
 
 ## env.py
 - DM one of our members on slack to get access to the `env.py` file and its keys.
