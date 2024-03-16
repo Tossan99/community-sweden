@@ -1,10 +1,10 @@
-from django.shortcuts import render
-from django.contrib import messages
+from django.views import generic
+from .models import PeerReview
 
 
-def peer_review_view(request):
-
-    return render(
-        request,
-        "peer_review/peer_review.html",
-    )
+class PeerReviewList(generic.ListView):
+    """
+    View for displaying all posts
+    """
+    queryset = PeerReview.objects.all()
+    template_name = "peer_review/peer_review.html"
