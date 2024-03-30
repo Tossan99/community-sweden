@@ -1,5 +1,5 @@
 # community-sweden
-
+test
 ![Community Sweden](documentation_media/community_sweden.jpg)
 
 We're thrilled to introduce you to our community-driven website, designed to support and enhance your journey through the Code Institute course. As a community passionate about learning and collaboration, we've created this platform to empower everyone to participate in coding and gain a deeper understanding of Django.
