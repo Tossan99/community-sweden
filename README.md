@@ -119,4 +119,3 @@ We use 4 spaces for indentations.
 
 [Back to top ⇧](#table-of-contents)
 
-TEST
